@@ -1,0 +1,26 @@
+{
+    "permissions": [
+        {
+            "user_id": "change-me",
+            "username": "change-me",
+            "permissions": [
+                "emote",
+                "teleport",
+                "print",
+                "say",
+                "walk"
+            ]
+        },
+        {
+            "user_id": "change-me",
+            "username": "change-me",
+            "permissions": [
+                "emote",
+                "teleport",
+                "print",
+                "say",
+                "walk"
+            ]
+        }
+    ]
+}
