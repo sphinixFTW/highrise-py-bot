@@ -38,7 +38,7 @@ class Command:
             target_user = next(
                 (user for user in users if user.username.lower() == target_username.lower()), None)
             if not target_user:
-                await self.bot.highrise.send_whisper(user.id, f"User '{target_username}' not found in the room.")
+                await self.bot.highrise.send_whisper(user.id, f"Usuário '{target_username}' não encontrado na sala.")
                 return
 
             target_user_id = target_user.id
