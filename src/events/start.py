@@ -11,4 +11,4 @@ async def on_start(bot, session_metadata: SessionMetadata) -> None:
 
     coords = config.coordinates
     await bot.highrise.walk_to(Position(coords['x'], coords['y'], coords['z'], coords['facing']))
-    print(f"{config.botName} is now ready.")
+    print(f"{config.botName} tá na área.")

@@ -13,6 +13,6 @@ class Command:
         for item in wallet.content:
             if item.type == "gold":
                 gold = item.amount
-                await self.bot.highrise.chat(f"Hello, {user.username}! My current balance is {gold} gold!")
+                await self.bot.highrise.chat(f"Olá, {user.username}! Meu saldo atual é: {gold} ouro!")
                 return
-        await self.bot.highrise.chat(f"Hello, {user.username}! I don't have any gold.")
+        await self.bot.highrise.chat(f"Olá, {user.username}! Não tenho ouro.")

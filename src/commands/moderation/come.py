@@ -12,7 +12,7 @@ class Command:
 
     async def execute(self, user: User, args: list, message: str):
         if user.id not in permissions.owners:
-            return await self.bot.highrise.send_whisper(user.id, f"This command is owner only command")
+            return await self.bot.highrise.send_whisper(user.id, f"Este comando é um comando exclusivo do proprietário")
         else:
             response = await self.bot.highrise.get_room_users()
             your_pos = None
@@ -25,5 +25,5 @@ class Command:
                 await self.bot.highrise.send_whisper(user.id, f"{messages.invalidPosition}")
                 return
 
-            await self.bot.highrise.chat(f"@{user.username} I'm coming ..")
+            await self.bot.highrise.chat(f"@{user.username} Estou indo..")
             await self.bot.highrise.walk_to(your_pos)

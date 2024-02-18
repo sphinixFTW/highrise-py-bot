@@ -4,4 +4,4 @@ from config.config import loggers
 
 async def on_reaction(bot, user: User, reaction: Reaction, receiver: User) -> None:
     if loggers.reactions:
-        print(f"{user.username} send {reaction} to {receiver.username}")
+        print(f"{user.username} enviou {reaction} para {receiver.username}")

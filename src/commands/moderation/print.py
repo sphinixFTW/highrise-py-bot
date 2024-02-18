@@ -12,7 +12,7 @@ class Command:
 
     async def execute(self, user: User, args: list, message: str):
         if user.id not in permissions.moderators:
-            return await self.bot.highrise.send_whisper(user.id, f"This command is moderator only command")
+            return await self.bot.highrise.send_whisper(user.id, f"Este comando é um comando apenas para moderadores.")
         else:
             prefix = config.prefix
             # Get the room users
